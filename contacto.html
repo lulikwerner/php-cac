@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <main>
+        <h2>Formulario</h2>
+        <form action=" base_de_datos.html" method="POST">
+
+            <a href="">Inicio</a>
+<!--el dsiabled no deja que se ingrese nada en ese campo -->
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" value="Lucila" disabled>
+
+            <input type="text" id="apellido" placeholder="apellido">
+
+            <label for="email">Email</label>
+            <input type="email" id="email">
+
+            <label for="age">Edad</label>
+            <input type="number" id="age" min="0" max="151">
+
+            <label for="fecha">Fecha cumple</label>
+            <input type="date" id="fecha">
+
+            <br>
+            <label for="pais">Pais</label>
+            <input type="text" minlength="4" maxlength="10" id="pais">
+            <br>
+
+            <h3>Select</h3>
+            <select name="" id="paises">
+                <option value="seleccionar">--Seleccionar--</option>
+                <option value="argentina">Argentina</option>
+                <option value="peru">Peru</option>
+                <option value="paraguay">Paraguay</option>
+
+            </select>
+
+            <h2>Mejor comida del mundo</h2>
+
+            <select name="" id="">
+                <option value="asado">Asado</option>
+                <option value="napo">Napolitana con fritas</option>
+                <option value="empa">Empanadas</option>
+                <option value="pizza">Pizza</option>
+            </select>
+
+            <br>
+            <h2>cursos de codo checkbox</h2>
+            <!--el name indica que pertenece a un grupo. Lo mete en el mismo array-->
+            <input type="checkbox" name="cursosCodo"value="PHP">PHP
+            <input type="checkbox" name="cursosCodo"value="Java">Java
+
+            <input type="checkbox" value="Node">Node
+            <input type="checkbox" value="Python">Python
+            <br>
+            <hr>
+
+            <h2>Cursos Z</h2>
+
+            <input type="checkbox" name="cursoZ" value="Unity">Unity
+            <input type="checkbox" name="cursoZ" value="Java">Java
+            <input type="checkbox" name="cursoZ" value="PHP">PHP
+            <input type="checkbox" name="cursoZ" value="UX/UI">UX/UI
+            <input type="checkbox" name="cursoZ" value="React">React
+
+            <br>
+            <hr>
+
+            <h2>Radio</h2>
+            <!--El name hace que solo pueda eleguir una opcion y no mas de una. En este caso al tener dos names diferentes me va a dejar eleguir mas de una opcion-->
+            <input type="radio" value="Matrix" name="mejorPeli"> Matrix
+            <input type="radio" value="John Wick" name="mejorPeli">John Wick
+            <input type="radio" value="Highlander" name="mejorPeli"> Highlander
+            <input type="radio" value="Titanic" name="mejorPel">Titanic
+            <input type="radio" value="Harry Poppoter" name="mejorPel"> Harry Poppoter
+
+            <br>
+
+            <h2>Comentarios</h2>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+
+            <br>
+
+            <label for="password">password</label>
+            <input type="password" id="password">
+
+           
+            <h3>Colores</h3>
+            <input type="color">
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar"
+        </form>
+    </main>
+    <footer>
+        SOY EL FOOTER
+    </footer>
+</body>
+</html>

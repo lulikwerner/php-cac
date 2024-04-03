@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    cursor:pointer;
+}
+header{
+    font-size: 20px;
+    height: 8vh;
+}
+nav{
+    width: 100%;
+    height:100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:5%;
+    background-color: #9f3647;
+}
+a{
+    color: white;
+}
+body{
+    background-color: black;
+}
+#banner {
+    position: relative; /* Ensure the container is positioned */
+    height: 400px;
+    background-image: url('./public/img/banner_bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#banner::after {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute; /* Position the overlay */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+    z-index: 1; /* Ensure the overlay is above the background image */
+}
+
+.mainTitle,
+.subTitle {
+    position: relative; /* Ensure the text is positioned relative to the banner */
+    z-index: 2; /* Ensure the text is above the overlay */
+}
+
+.mainTitle {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.subTitle {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+section{
+    text-align:center;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+footer{
+    background-color: #9f3647;
+    color: white;
+    font-size: 20px;
+}   
+ul{
+    list-style: none;
+}
+.cambio_inline li{
+    display:inline;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+hr{
+    border: 1px solid #9f3647;
+    width: 80%;
+    margin: 0 auto;
+      margin-top: 0px;
+    margin-top: 40px;
+  }
