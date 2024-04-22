@@ -1,22 +1,93 @@
-*{
+* {
     margin: 0;
-    cursor:pointer;
+    padding: 0;
+    border: 2px;
+    box-sizing: border-box;
 }
-header{
+/* Estilos del Navbar */
+.nav-bar {
     font-size: 20px;
-    height: 8vh;
-}
-nav{
-    width: 100%;
-    height:100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom:5%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
     background-color: #9f3647;
 }
-a{
+
+.nav-bar li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.nav-bar li a:hover {
     color: white;
 }
+.linkNav {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.linkNav:hover{
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.iniciarSesion {
+    background-color: #181419;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.logo {
+    margin-right: auto;
+    margin-left: 2%;
+}
+.anclaLogo {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-right: 3%;
+}
+
+.menu li {
+    margin-right: 50px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.open-menu {
+    display: none;
+}
+
+.close-menu {
+    display: none;
+}
+#check {
+    display: none;
+}
+.fas .fa-bars {
+    display: none;
+}
+
 body{
     background-color: black;
 }
@@ -86,3 +157,65 @@ hr{
       margin-top: 0px;
     margin-top: 40px;
   }
+
+
+
+
+  @media screen and (max-width: 930px) {
+    .menu {
+        width: 100%;
+        height: 100vh;
+        display: none;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin-right: 0;
+        text-align: center;
+        background-color: rgba(159, 54, 71, 0.95);
+        z-index: 999;
+    }
+    
+    .menu li {
+        padding: 60px 0;
+        margin-bottom: 20px;
+        display: block;
+        margin-right: 0;
+    }
+    
+    .open-menu {
+        display: block;
+        margin-right: 20px;
+        font-size: 24px;
+    }
+
+  
+    .close-menu {
+        display: none;
+        position: absolute; 
+        top: 24px;
+        right: 20px; 
+        font-size: 24px;
+        z-index: 1001;
+    }
+
+    .menu-open .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        right: 0;
+        background-color: gray;
+        padding: 10px;
+        z-index: 1;
+    }
+
+    .menu-open .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
