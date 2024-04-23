@@ -8,41 +8,41 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/47e07fc3d8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <title>CAC-MOVIES</title>
     </head>
     <body>
         <nav>
             <ul class="nav-bar">
-                <li class="logo"><a class="anclaLogo" href="/"> <i class="fa-solid fa-film"></i>CAC-Movies</a></li>
+                <li class="logo "><a class="anclaLogo" href="/"> <i class="fa-solid fa-film"></i> CAC-Movies</a></li>
                 <input type="checkbox" id="check">
                 <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
                 <div class="menu">
                     <li><a class="linkNav" href="#">Tendencias</a></li>
                     <li><a class="linkNav" href="#">Registrarse</a></li>
-                    <li><a class="linkNav IniciarSesion" href="#">Iniciar Sesion</a></li>
-        
+                    <li><a class="linkNav iniciarSesion" href="#">Iniciar Sesión</a></li>
                 </div>
                 <li><label for="check" class="close-menu"><i class="fas fa-times"></i></label></li>
             </ul>
         </nav>
         <main>
 
-            <section id="banner">
-                <h1 class="mainTitle">Peliculas y series en un solo lugar</h1>
+            <section  class="animate__animated  animate__zoomIn banner main">
+                <h1 class="mainTitle">Peliculas y series ilimitadas<br> en un solo lugar</h1>
                 <h2 class="subTitle">Disfruta donde quieras.
                 <br>Cancela en cualquier momento.</h2>
-                <button>Registrarse</button>
+                <a class="registerButton" href="#"> Registrate</a>
 
             </section>
-            <section>
-                <h2>Que estas buscando para ver?</h2>
+            <section class="searchSection" data-aos="fade-up" data-aos-offset="200" data-aos-delay="30" data-aos-duration="1000"">
+                <h2 class="searchTitle">¿Que estas buscando para ver?</h2>
                 <form>
-                    <input type="text">
-                    <input type="submit" value="Buscar">
+                    <input type="text"class="inputSearch" placeholder="Buscar..." name="buscar">
+                    <input type="submit" class="searchButton" value="Buscar">
                 </form>
-
             </section>
             <hr>
                 <section>
@@ -64,13 +64,23 @@
         </main>
 
         <footer>
+            <section class="footerNav">
             <ul>
-                <li><a href>Términos y condiciones</a></li>
-                <li><a href>Preguntas frecuentes</a></li>
-                <li><a href>Ayuda</a></li>
-                <li><a href>Administrador Peliculas</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#" class="admin">Administrador Peliculas</a></li>
             </ul>
+     
+        <a href="#main" class="arrow">
+            <i class="fa-solid fa-angle-up"></i>
+        </a>
+    </section>
         </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
         <script src="main.js"></script>
     </body>
 </html>
