@@ -225,6 +225,12 @@ section {
     margin-top: 5rem;
 }
 
+.registerButton:hover {
+    background-color: #9f3647;
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
 .inputSearch {
     border: 2px solid white;
     border-radius: 25px;
@@ -252,21 +258,11 @@ section {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.registerButton:hover {
-    background-color: #9f3647;
-    transform: scale(0.95);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-}
-
-
-.searchButton {
-    &:hover {
+.searchButton:hover {
         background-color: #9f3647;
         transform: scale(0.95);
         box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
-    }
-
-
+    
 }
 
 ul li a {
@@ -284,6 +280,149 @@ hr {
 .cambio_inline li {
     display: inline;
 }
+/*Tendencias*/
+.trends{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title title  title title"
+      "movie1 movie2 movie3 movie4"
+      "movie5 movie6 movie7 movie8"
+      "movie9 movie10 movie11 movie12"
+      "movie13 movie14 movie15 movie16"
+      "movie17 movie18 movie19 movie20";
+    gap: 20px; 
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+.trendsTitle{
+    grid-area:title;
+    justify-self: center;
+    align-self: center; 
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.movie {
+    width: 15rem;
+    height: 23rem;
+    margin-bottom: 4rem;
+}
+  
+  .imgTendencia {
+    width: 100%; /* Ajusta el ancho de la imagen según sea necesario */
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 5%;
+  }
+  .movieTitle{
+    display: none;
+  }
+.movie1{
+    grid-area: movie1;
+}
+.movie2{
+    grid-area: movie2;
+}
+.movie3{
+    grid-area: movie3;
+}
+.movie4{
+    grid-area: movie4;
+}
+.movie5{
+    grid-area: movie5;
+}
+.movie6{
+    grid-area: movie6;
+}
+.movie7{
+    grid-area: movie7;
+}
+.movie8{
+    grid-area: movie8;
+}
+.movie9{
+    grid-area: movie9;
+}
+.movie10{
+    grid-area: movie10;
+}
+.movie11{
+    grid-area: movie11;
+}
+.movie12{
+    grid-area: movie12;
+}
+.movie13{
+    grid-area: movie13;
+}
+.movie14{
+    grid-area: movie14;
+}
+.movie15{
+    grid-area: movie15;
+}
+.movie16{
+    grid-area: movie16;
+}
+.movie17{
+    grid-area: movie17;
+}
+.movie18{
+    grid-area: movie18;
+}
+.movie19{
+    grid-area: movie19;
+}
+.movie20{
+    grid-area: movie20;
+}
+.movie:hover {
+    transform: scale(0.9); 
+    border-radius: 5%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px 0 rgba(159, 54, 71, 0.8); 
+}
+.movie:hover .imgTendencia {
+    opacity: 0.7; 
+}
+.movieTitle {
+    display: none; 
+    color:white;
+    font-size: 30px;
+    position: absolute; 
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding: 10px; 
+    z-index: 9999; 
+}
+
+.movie:hover .movieTitle {
+    display: block; 
+} 
+
+.button{
+    background-color: #9f3647;
+    display: inline-block;
+    color: #ffffff;
+    height: 50px;
+    margin: 20px 10px;
+    padding: 0 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: 2px solid white;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.button:hover{
+    background-color: #9f3647;
+    transform: scale(0.95);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
 /*Peliculas aclamadas*/
 .recommendedTitle{
     font-size: 2.5rem;
@@ -323,7 +462,8 @@ hr {
     background-color: #9f3647;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+    align-items: center;
     height: 15vh;
     bottom: 0;
     color: #ffffff;
@@ -526,6 +666,18 @@ hr {
 }
 
 @media screen and (max-width: 370px) {
+    .mainTitle{
+        font-size: 2rem;
+    }
+    .subTitle{
+        font-size: 1.2rem;
+    }
+    .searchTitle {
+        font-size: 1.2rem;
+    }
+    .recommendedTitle{
+        font-size: 1.2rem;
+    }
 .footerNav{
     padding-left: 2rem;
     padding-right: 2rem;
