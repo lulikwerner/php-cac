@@ -854,3 +854,100 @@ footer ul li a{
     width: 100px; 
     }
 }
+
+
+/*LOGIN STYLE*/
+.bodyRegistration{
+    height: 100vh;
+  background: linear-gradient(to right top, #24242473,#24242473),url("./public/img/bg-register.jpg");
+    background-position-x: 0%, 0%;
+    background-position-y: 0%, 0%;
+    background-size: auto, auto;
+  background-size: cover;
+  background-position: center;
+}
+.containerForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.formLogin{
+    background-color: rgb(42, 42, 42);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0 4rem;
+  border-radius: 5px;
+ 
+}
+.titleForm {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    color: #333333;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 0.75rem;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+    border: 2px solid #9f3647;
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    background-color: #333333;
+    box-sizing: border-box;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+input[type="email"]:-internal-autofill-selected,
+input[type="password"]:-internal-autofill-selected {
+    background-color: #333333 !important; /* Cambia el color de fondo a tu preferencia */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    background-color: #9f3647;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #9f3647;
+}
+.register{
+    margin-top: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #787878;
+    font-weight: 400;
+}
+
